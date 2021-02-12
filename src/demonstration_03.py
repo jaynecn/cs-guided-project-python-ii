@@ -15,5 +15,18 @@ Notes:
 
 
 def multiply_nums(nums):
-    # Your code here
+    result = 1
+    # split entries by comma
+    newList = nums.split(", ")
+    # convert nums to ints
+    for data in newList:
+        num = int(data)
+        result = result * num
+    return result
 
+
+
+print(multiply_nums("2, 3"))
+print(multiply_nums("1, 2, 3, 4"))
+print(multiply_nums("54, 75, 453, 0"))
+print(multiply_nums("10, -2"))

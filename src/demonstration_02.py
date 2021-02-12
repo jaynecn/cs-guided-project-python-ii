@@ -16,5 +16,13 @@ Notes:
 
 
 def add_indexes(numbers):
-    # Your code here
+    
+    # return [i + numbers[i] for i in range(len(numbers))]
+    
+    for i in range(len(numbers)):
+        numbers[i] = numbers[i] + 1
+    return numbers
 
+
+print(add_indexes([0, 0, 0, 0, 0]))
+print(add_indexes([1, 2, 3, 4, 5]))
