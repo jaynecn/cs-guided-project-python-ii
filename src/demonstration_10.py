@@ -16,6 +16,22 @@ Notes:
 the maximum number is first.
 """
 def max_and_min(input_str):
-    # Your code here
+    # UPER Understand Plan
+    
+    # split the numbers on the space
+    char_nums = input_str.split(" ")
+    
+    # convert to int
+    # apply map
+    nums = list(map(int, char_nums))
+    
+    max_num = max(nums)
+    min_num = min(nums)
+    
+    # template literals
+    return f"{max_num} {min_num}"
 
 
+print(max_and_min("1 2 3 4 5"))
+print(max_and_min("1 2 -3 4 5"))
+print(max_and_min("1 9 3 4 -5"))
