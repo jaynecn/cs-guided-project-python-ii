@@ -24,5 +24,16 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+    print(txt)
+    
+    if "smile" in txt:
+        return "Make me :D"
+    elif "grin" in txt:
+        return "Make me :)"
+    elif "sad" in txt:
+        return "Make me :("
 
+
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
+print(emotify("Make me sad"))
