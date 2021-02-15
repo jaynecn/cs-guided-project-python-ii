@@ -13,5 +13,23 @@ Examples:
 - repeat_it("cwAt") -> "C-Ww-Aaa-Tttt"
 """
 def repeat_it(input_str):
+    result =""
+    for data in input_str:
+        multipleNumber = input_str.index(data)
+        # print(multipleNumber)
+        result = result + data.upper() + (data.lower() * multipleNumber) + "-"
+        newResult = result[:-1]
+        # print(newResult)
+    # seperate by the dash
+    
+    return newResult
+    # get the index number of the item
+    
+    
+    # repeat it by the number it is in the index plus "-"
     # Your code here
 
+
+print(repeat_it("abcd"))
+print(repeat_it("RqaEzty"))
+print(repeat_it("cwAt"))
