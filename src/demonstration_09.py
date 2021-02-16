@@ -14,32 +14,29 @@ Examples:
 - get_middle("A") -> "A"
 """
 def get_middle(input_str):
+    # need variable to add to 
     result = ""
-    resultList = []
-    test = []
+    
+    # get data on the length of the string
     length = len(input_str)
-    print(length)
+    
+    # if the string length is an odd number:
     if length % 2 != 0:
-        for data in input_str:
-            resultList.append(data)
-            print(resultList)
-            maths = 7 // 2
-            print(maths)
-            print(resultList[maths])
-        # return thisResult
+        # return string character with index:
+        # divide by two and then round the number down to the nearest integer 
+        return input_str[len(input_str)//2]
+
+    # if the string is length is an even number
     else:
-        for data in input_str:
-            resultList.append(data)
-            # print(resultList)
-        
-        # had the stuff below here set at the wrong indentation, oops
-        test.append(resultList[1])
-        test.append(resultList[2])
-             
-    return test
+        # return the two middle string characters with index:
+        # divide by two and then round the number down to the nearest integer 
+        result = result + input_str[len(input_str)//2 - 1] + input_str[len(input_str)//2]
+
+        return result
     
 print(get_middle("testing"))
 print(get_middle("test"))
-# print(get_middle("middle"))
+print(get_middle("middle"))
+print(get_middle("A"))
 
 
