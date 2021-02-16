@@ -15,15 +15,16 @@ Examples:
 def repeat_it(input_str):
     result =""
     for data in input_str:
+        
+        # get the index number of the item
         multipleNumber = input_str.index(data)
-        # print(multipleNumber)
+        # seperate by the dash
         result = result + data.upper() + (data.lower() * multipleNumber) + "-"
-        newResult = result[:-1]
-        # print(newResult)
-    # seperate by the dash
+        # take the last dash off at the end
+        newResult = result[:-1] 
     
     return newResult
-    # get the index number of the item
+    
     
     
     # repeat it by the number it is in the index plus "-"
